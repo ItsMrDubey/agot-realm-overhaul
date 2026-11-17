@@ -1,6 +1,6 @@
-# AGOT Personal Edits
+# AGOT Realm Overhaul
 
-A personal submod for the [A Game of Thrones](https://steamcommunity.com/sharedfiles/filedetails/?id=2962333032) total conversion mod for Crusader Kings III. It loads after AGOT, so anything here overrides the base mod.
+A game-wide overhaul submod (diplomacy, AI behaviour, balance and other core systems) for the [A Game of Thrones](https://steamcommunity.com/sharedfiles/filedetails/?id=2962333032) total conversion mod for Crusader Kings III. It loads after AGOT, so anything here overrides the base mod.
 
 ## How overriding works
 
@@ -12,7 +12,7 @@ Changes to starting history only apply to new games.
 
 ## Setup
 
-The game finds this mod through `Documents/Paradox Interactive/Crusader Kings III/mod/agot_personal.mod`, which points at this folder. Edits here are live on the next game launch.
+The game finds this mod through `Documents/Paradox Interactive/Crusader Kings III/mod/agot_realm_overhaul.mod`, which points at this folder. Edits here are live on the next game launch.
 
 Base mod files for reference: `Documents/Paradox Interactive/Crusader Kings III/mod/AGOT/`.
 

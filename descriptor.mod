@@ -1,5 +1,5 @@
 version="0.1.0"
-name="AGOT Personal Edits"
+name="AGOT Realm Overhaul"
 tags={
 	"Gameplay"
 }
