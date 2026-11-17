@@ -1,4 +1,4 @@
-# Gives every living character with a broken culture a valid one, preferring
+﻿# Gives every living character with a broken culture a valid one, preferring
 # family, then where they are, then their liege.
 agot_ro_repair_broken_cultures_effect = {
 	every_living_character = {

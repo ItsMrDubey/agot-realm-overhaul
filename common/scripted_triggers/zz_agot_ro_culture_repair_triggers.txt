@@ -1,4 +1,4 @@
-# Character scope. True if the character has no culture, or a culture reference
+﻿# Character scope. True if the character has no culture, or a culture reference
 # that points at a deleted culture (shows up in error.log as "Culture - 4294967295").
 # A deleted culture fails every culture trigger, so checking for the earliest era
 # is enough to tell a live culture from a dangling one.
