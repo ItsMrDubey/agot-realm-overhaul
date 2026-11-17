@@ -1,0 +1,5 @@
+﻿# Flat domain limit bonus, applied by console/run file to a chosen character.
+agot_ro_domain_limit_bonus_modifier = {
+	icon = stewardship_positive
+	domain_limit = 18
+}
