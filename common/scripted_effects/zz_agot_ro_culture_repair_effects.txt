@@ -1,0 +1,37 @@
+# Gives every living character with a broken culture a valid one, preferring
+# family, then where they are, then their liege.
+agot_ro_repair_broken_cultures_effect = {
+	every_living_character = {
+		limit = { agot_ro_has_broken_culture_trigger = yes }
+		if = {
+			limit = {
+				exists = father
+				father = { agot_ro_has_broken_culture_trigger = no }
+			}
+			set_culture = father.culture
+		}
+		else_if = {
+			limit = {
+				exists = mother
+				mother = { agot_ro_has_broken_culture_trigger = no }
+			}
+			set_culture = mother.culture
+		}
+		else_if = {
+			limit = {
+				exists = location.culture
+				location.culture = { has_cultural_era_or_later = culture_era_tribal }
+			}
+			set_culture = location.culture
+		}
+		else_if = {
+			limit = {
+				exists = liege
+				liege = { agot_ro_has_broken_culture_trigger = no }
+			}
+			set_culture = liege.culture
+		}
+		debug_log = "AGOT Realm Overhaul: repaired broken culture"
+		debug_log_scopes = yes
+	}
+}

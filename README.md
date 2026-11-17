@@ -19,3 +19,6 @@ Base mod files for reference: `Documents/Paradox Interactive/Crusader Kings III/
 ## Debugging
 
 Errors from your edits show up in `Documents/Paradox Interactive/Crusader Kings III/logs/error.log`.
+## Fixes
+
+- **Broken culture repair:** some characters can end up pointing at a deleted culture, which floods `error.log` with `has_cultural_era_or_later ... Culture - 4294967295` and can crash the game. Every quarter the player's pulse finds those characters and gives them a valid culture (father, mother, current location, then liege). To run it immediately in debug mode, open the console and enter `effect agot_ro_repair_broken_cultures_effect = yes`.

@@ -1,0 +1,10 @@
+# Runs the culture repair every quarter, once per player, so characters that
+# end up with a deleted culture get fixed before they flood error.log or crash the game.
+quarterly_playable_pulse = {
+	on_actions = { agot_ro_culture_repair_pulse }
+}
+
+agot_ro_culture_repair_pulse = {
+	trigger = { is_ai = no }
+	effect = { agot_ro_repair_broken_cultures_effect = yes }
+}
